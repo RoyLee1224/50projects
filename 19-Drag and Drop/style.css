@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1637577030746779215/39C14E99106BDFD9628192E3830C47F46352CA21/?imw=1024&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+    background-size:150px 150px ;
+  }
+  
+  .fill {
+    background-image: url('https://i.pinimg.com/1200x/b5/db/42/b5db422bb4d91eb1b1f10f50fa7a204f.jpg');
+    background-size:150px 150px ;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+  }
+  
+  @media (max-width: 800px) {
+    body {
+      flex-direction: column;
+    }
+  }
